@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1320px;
+            margin-top: 16px;
+        }
+        .style2
+        {
+            height: 30px;
+            margin-left: 80px;
+        }
+        .style3
+        {
+            height: 30px;
+            width: 121px;
+            margin-left: 80px;
+        }
+        .style4
+        {
+            width: 121px;
+        }
+        .style8
+        {
+            width: 200px;
+        }
+        .style11
+        {
+            width: 244px;
+        }
+        .style12
+        {
+            width: 171px;
+        }
+        .style15
+        {
+            width: 254px;
+        }
+        .style16
+        {
+            width: 243px;
+        }
+        </style>
+</head>
+<body background="image/abstract_0049_2.jpg" style="height: 1298px">
+    <form id="form1" runat="server">
+    <asp:Image ID="Image1" runat="server" Height="200px" 
+        ImageUrl="~/image/inventory.jpg" style="margin-top: 0px" Width="1331px" 
+         />
+    <table class="style1">
+        <tr>
+            <td class="style15" >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Home.aspx" 
+                    style="font-size: xx-large">Home</asp:HyperLink>
+            </td>
+            <td class="style15" >
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Contact us.aspx" 
+                    style="font-size: xx-large">Contact Us</asp:HyperLink>
+            </td>
+            <td class="style15">
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/About us.aspx"
+                style="font-size: xx-large">About Us</asp:HyperLink>
+            </td>
+            <td class="style15" >
+                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Log in.aspx" 
+                    style="font-size: xx-large">Log in</asp:HyperLink>
+            </td>
+            <td class="style15" >
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Help.aspx" 
+                    style="font-size: xx-large">Help</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+    <table class="style1" >
+        <tr>
+            <td class="style3">
+                &nbsp;</td>
+            <td class="style2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <table class="style1">
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style4">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
